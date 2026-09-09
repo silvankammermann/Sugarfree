@@ -1,0 +1,15 @@
+/*
+Add simple, reusable classes to this file.
+ */
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.no-underline {
+    text-decoration: none;
+}

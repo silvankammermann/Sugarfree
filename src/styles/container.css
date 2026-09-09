@@ -1,0 +1,21 @@
+/* +-------------+ */
+/* |   Default   | */
+/* +-------------+ */
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-container .page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden scroll;
+}
+
+#page-container .page-content > :first-child {
+    flex: 1;
+}

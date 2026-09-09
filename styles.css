@@ -1,0 +1,13 @@
+@import "/src/styles/components.css";
+@import "/src/styles/fonts.css";
+@import "/src/styles/global.css";
+@import "/src/styles/helpers.css";
+@import "/src/styles/pages.css";
+@import "/src/styles/container.css";
+
+:root {
+    --primary: #4fb783;
+    --text: #10160a;
+    --background: #ffffff;
+    --surface: #cbb5a9;
+}

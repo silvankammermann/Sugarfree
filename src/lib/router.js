@@ -2,10 +2,11 @@ let pathParams = {};
 let searchParams = {};
 
 /**
+ * @template T
  * @param {string} urlString The Current Url for which the content should be returned.
- * @param {Object.<string, () => Element>} routes Object with Routes as Keys and objects to be returned as Values.
- * @param {() => Element} fallback The Fallback object in case no route matches the URL.
- * @returns {() => Element}
+ * @param {Object.<string, T>} routes Object with Routes as Keys and objects to be returned as Values.
+ * @param {T} fallback The Fallback object in case no route matches the URL.
+ * @returns {T}
  */
 export function get(urlString, routes, fallback) {
     const url = new URL(urlString);

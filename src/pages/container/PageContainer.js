@@ -12,7 +12,7 @@ export function PageContainer(content) {
         <div class="page-content">
             ${content}
             <footer>
-                <p>Made with no Sugar :)</p>
+                <p>Made without Sugar :)</p>
             </footer>
         </div>
     </div>`;

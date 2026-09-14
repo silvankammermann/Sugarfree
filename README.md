@@ -1,6 +1,6 @@
 # Sugarfree JS
 
-A dependency-free, component based JS library.
+A dependency-free, component based JS boilerplate.
 
 ## Getting started
 

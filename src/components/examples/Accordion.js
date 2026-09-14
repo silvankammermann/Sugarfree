@@ -3,14 +3,15 @@ import {element} from "../../lib/element.js";
  * @typedef {Object} AccordionParams
  * @property {Element} trigger
  * @property {Element} content
+ * @property {string} classes - optional
  */
 
 /**
  * @param {AccordionParams}
  * @returns {Element}
  */
-export default function Accordion({ trigger, content }) {
-    const accordion = element`<div class="accordion">
+export default function Accordion({ trigger, content, classes }) {
+    const accordion = element`<div class="accordion ${classes}">
         <div class="trigger">
             ${trigger}               
         </div>

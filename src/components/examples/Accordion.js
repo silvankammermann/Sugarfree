@@ -10,8 +10,13 @@ import {element} from "../../lib/element.js";
  * @param {AccordionParams}
  * @returns {Element}
  */
-export default function Accordion({ trigger, content, classes }) {
-    const accordion = element`<div class="accordion ${classes}">
+export default function Accordion({ trigger, content, initiallyClosed, classes }) {
+
+    initiallyClosed = initiallyClosed === undefined
+        ? true
+        : initiallyClosed
+
+    const accordion = element`<div class="accordion ${initiallyClosed ? "" : "open"} ${classes}">
         <div class="trigger">
             ${trigger}               
         </div>

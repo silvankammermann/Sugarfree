@@ -7,7 +7,11 @@ import {element} from "../../lib/element.js";
  */
 export default function TestResultOverview(result) {
     return element`<div class="test-result">
-        <p>${result.passed ? "✓" : "✕"} ${result.description}</p>
-        ${result.passed ? "" : element`<pre>${result.error}</pre>`}
+        ${result.passed 
+        ? `✓ ${result.description}`
+        : element`<div>
+            ✕ ${result.description}
+            <p>${result.error}</p>
+        </div>`}
     </div>`
 }

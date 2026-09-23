@@ -5,12 +5,12 @@
 */
 .accordion .trigger:hover {
     cursor: pointer;
+    user-select: none;
 }
 
 .accordion .content {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease;
 }
 
 .accordion .content > * {
@@ -30,5 +30,4 @@
     display: inline-block;
     box-shadow: 1px 1px 24px 0 rgba(0, 0, 0, 0.2);
     padding: .8rem 1.2rem;
-    border-radius: 1rem;
 }

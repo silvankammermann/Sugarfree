@@ -16,7 +16,7 @@ const routes = {
 export const routerTests = [
     test("get() returns correct route for simple path", () => {
         const result = get("http://example.com/about", routes, "not-found");
-        expect(result).toBe("aboaldfikvblut");
+        expect(result).toBe("about");
     }),
 
     test("get() returns home for root path", () => {

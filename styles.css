@@ -6,8 +6,7 @@
 @import "/src/styles/container.css";
 
 :root {
-    --primary: #4fb783;
-    --text: #10160a;
+    --accent: #3c9464;
+    --text: #242424;
     --background: #ffffff;
-    --surface: #cbb5a9;
 }

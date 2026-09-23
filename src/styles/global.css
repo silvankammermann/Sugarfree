@@ -4,8 +4,7 @@ Add general styles to this file
 
 * {
     box-sizing: border-box;
-    text-align: center;
-    font-family: Nunito, sans-serif;
+    font-family: monospace;
 }
 
 body {
@@ -15,7 +14,7 @@ body {
 }
 
 a {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

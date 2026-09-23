@@ -1,20 +1,20 @@
 import {element} from "../../lib/element.js";
 /**
- * @typedef {Object} AccordionParams
- * @property {Element} trigger
- * @property {Element} content
- * @property {string} classes - optional
+ * @typedef {Object} AccordionOptions
+ * @property {boolean} initiallyClosed
+ * @property {string} classes
  */
 
 /**
- * @param {AccordionParams}
+ * @param {Element | string} trigger
+ * @param {Element} content
+ * @param {AccordionOptions} options - optional
  * @returns {Element}
  */
-export default function Accordion({ trigger, content, initiallyClosed, classes }) {
-
-    initiallyClosed = initiallyClosed === undefined
-        ? true
-        : initiallyClosed
+export default function Accordion( trigger, content, {
+    initiallyClosed = true,
+    classes = ""
+} = {}) {
 
     const accordion = element`<div class="accordion ${initiallyClosed ? "" : "open"} ${classes}">
         <div class="trigger">

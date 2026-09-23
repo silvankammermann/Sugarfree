@@ -6,7 +6,7 @@
  */
 
 /**
- * 
+ *
  * @param {string} description
  * @param {() => void} runner
  * @returns {{description: *, passed: boolean}|{description: *, passed: boolean, error}}
@@ -98,6 +98,7 @@ export function expectArray(actual) {
 
 /**
  * @typedef {Object} ExpectObjectFunctions
+ * @property {() => void} toBeEmpty
  */
 
 /**
@@ -107,6 +108,10 @@ export function expectArray(actual) {
  */
 export function expectObject(actual) {
     return {
+        toBeEmpty: () => {
+            if (Object.keys(actual).length > 0)
+                throw new Error(`Expected Object to be empty, but got the following properties: ${Object.keys(actual).join(", ")}`)
+        }
         // toHaveProperty: (property) => {},
         // toNotHaveProperty: (property) => {},
         // toEqual: (expected) => {},

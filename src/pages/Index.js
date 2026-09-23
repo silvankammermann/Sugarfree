@@ -1,7 +1,11 @@
 import { element } from "../lib/element.js";
 
 /**
- * @returns {Element}
+ * @typedef {(SiteContext) => Element} PageComponent
+ */
+
+/**
+ * @type {PageComponent}
  */
 export default function Index() {
     return element`<main>

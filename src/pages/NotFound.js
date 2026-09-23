@@ -1,7 +1,7 @@
 import { element } from "../lib/element.js";
 
 /**
- * @returns {Element}
+ * @type {PageComponent}
  */
 export default function NotFound() {
     return element`<main>

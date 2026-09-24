@@ -1,4 +1,5 @@
 import { element } from "../../lib/element.js";
+import Header from "../../components/examples/Header.js";
 
 /**
  * @param {(SiteContext) => Element} content
@@ -6,9 +7,7 @@ import { element } from "../../lib/element.js";
  */
 const PageContainer = content => ctx => {
     return element`<div id="page-container">
-        <header>
-            <p>Header</p>
-        </header>
+        ${Header()}
         <div class="page-content">
             ${content(ctx)}
             <footer>

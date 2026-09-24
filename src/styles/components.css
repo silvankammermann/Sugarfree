@@ -3,6 +3,7 @@
 |   Accordion   |
 +---------------+
 */
+
 .accordion .trigger:hover {
     cursor: pointer;
     user-select: none;
@@ -26,8 +27,27 @@
 |   Card   |
 +----------+
 */
+
 .card {
     display: inline-block;
     box-shadow: 1px 1px 24px 0 rgba(0, 0, 0, 0.2);
     padding: .8rem 1.2rem;
+}
+
+/*
++------------+
+|   Header   |
++------------+
+ */
+
+.header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--text);
+}
+
+.header .home-link {
+    font-size: 2rem;
+    color: var(--text);
+    text-decoration: unset;
+    font-weight: 700;
 }

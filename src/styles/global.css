@@ -5,6 +5,12 @@ Add general styles to this file
 * {
     box-sizing: border-box;
     font-family: monospace;
+    color: var(--text);
+}
+
+::selection {
+    color: var(--background);
+    background: var(--text);
 }
 
 body {

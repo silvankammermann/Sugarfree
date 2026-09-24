@@ -8,9 +8,9 @@ import {element} from "../../lib/element.js";
 export default function TestResultOverview(result) {
     return element`<div class="test-result">
         ${result.passed 
-        ? `✓ ${result.description}`
+        ? element`<div><span class="text-success">✓</span> ${result.description}</div>`
         : element`<div>
-            ✕ ${result.description}
+            <span class="text-error">✕</span> ${result.description}
             <p>${result.error}</p>
         </div>`}
     </div>`

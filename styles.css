@@ -6,7 +6,17 @@
 @import "/src/styles/container.css";
 
 :root {
-    --accent: #3c9464;
+    --accent: #7b3c94;
     --text: #242424;
     --background: #ffffff;
+
+    --success: #3d8b2b;
+    --error: #8b2b2b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #242424;
+        --text: #c1b7b0;
+    }
 }

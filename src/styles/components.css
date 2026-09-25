@@ -4,9 +4,23 @@
 +---------------+
 */
 
+.accordion {
+    border: 1px solid var(--text);
+}
+
+.accordion .std-trigger {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
 .accordion .trigger:hover {
     cursor: pointer;
     user-select: none;
+}
+
+.accordion.open .trigger .indicator {
+    transform: rotate(180deg);
 }
 
 .accordion .content {
@@ -19,6 +33,7 @@
 }
 
 .accordion.open .content {
+    border-top: 1px solid var(--text);
     grid-template-rows: 1fr;
 }
 
@@ -30,8 +45,19 @@
 
 .card {
     display: inline-block;
-    box-shadow: 1px 1px 24px 0 rgba(0, 0, 0, 0.2);
     padding: .8rem 1.2rem;
+    border: 1px solid var(--text);
+}
+
+/*
++---------------+
+|   Codeblock   |
++---------------+
+ */
+
+.codeblock {
+    border: 1px solid var(--text);
+    padding: 1em 2em;
 }
 
 /*

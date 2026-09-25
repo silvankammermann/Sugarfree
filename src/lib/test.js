@@ -2,6 +2,7 @@
  * @typedef {Object} TestResult
  * @property {string} description
  * @property {boolean} passed
+ * @property {() => void} fn
  * @property {string} error - (optional) only set if `passed` is false.
  */
 
@@ -12,7 +13,7 @@
  * @returns {{description: *, passed: boolean}|{description: *, passed: boolean, error}}
  */
 export function test(description, runner) {
-    const testResult = { description };
+    const testResult = { description, fn: runner };
     try {
         runner();
         return {

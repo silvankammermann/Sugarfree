@@ -11,8 +11,6 @@ import {element} from "../../lib/element.js";
  * @param {CodeblockOptions} options - optional
  * @returns {Element}
  */
-export default function Codeblock(text, { classes = "" } = {}) {
-    return element`<pre class="codeblock ${classes}">
-        ${text}
-    </pre>`;
+export default function Codeblock(text, language = "", { classes = "" } = {}) {
+    return element`<pre class="codeblock ${language ? `language-${language}` : ""} ${classes}"><code>${text}</code></pre>`;
 }

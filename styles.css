@@ -11,7 +11,7 @@
     --background: #ffffff;
 
     --success: #3d8b2b;
-    --error: #8b2b2b;
+    --error: #b43939;
 }
 
 @media (prefers-color-scheme: dark) {

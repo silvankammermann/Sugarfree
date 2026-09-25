@@ -16,9 +16,16 @@ export default function Accordion( trigger, content, {
     classes = ""
 } = {}) {
 
+    const triggerElement = typeof trigger === "string"
+        ? element`<div class="std-trigger">
+            <p>${trigger}</p>
+            <p class="indicator">v</p>
+        </div>`
+        : trigger
+
     const accordion = element`<div class="accordion ${initiallyClosed ? "" : "open"} ${classes}">
         <div class="trigger">
-            ${trigger}               
+            ${triggerElement}
         </div>
         <div class="content">${content}</div>
     </div>`;

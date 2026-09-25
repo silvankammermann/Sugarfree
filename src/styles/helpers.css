@@ -21,3 +21,15 @@ Add simple, reusable classes to this file.
 .no-underline {
     text-decoration: none;
 }
+
+.no-border {
+    border: none;
+}
+
+.padding {
+    padding: 1em;
+}
+
+.margin {
+    margin: 1em;
+}

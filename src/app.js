@@ -10,14 +10,13 @@ const [elementCallback, routerContext] = get(window.location.href, {
 }, NotFound);
 
 /**
+ * Extend the router context with e.g. user information or a JWT
  * @typedef {Object} SiteContext
  * @extends RouterContext
  */
 
 /**
  * @type {SiteContext}
- *
- * Extend the router context with e.g. user information or a JWT
  */
 const siteContext = { ...routerContext }
 

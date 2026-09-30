@@ -1,6 +1,4 @@
 import { element } from "../lib/element.js";
-import Card from "../components/examples/Card.js";
-import Codeblock from "../components/examples/Codeblock.js";
 
 /**
  * @typedef {(SiteContext) => Element} PageComponent
@@ -11,9 +9,9 @@ import Codeblock from "../components/examples/Codeblock.js";
  */
 export default function Index() {
     return element`<main>
-        <h1>Hello World</h1>
+        <h1>Sugarfree</h1>
         
-        ${Codeblock(`console.log("Guaccamole")`, "javascript")}
+        
         
     </main>`;
 }

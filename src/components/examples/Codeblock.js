@@ -1,4 +1,5 @@
 import {element} from "../../lib/element.js";
+import {escapeHtml} from "../../lib/util.js";
 
 /**
  * @typedef {Object} CodeblockOptions
@@ -14,5 +15,5 @@ import {element} from "../../lib/element.js";
  * @returns {Element}
  */
 export default function Codeblock(text, language = "", { classes = "" } = {}) {
-    return element`<pre class="codeblock ${language ? `language-${language}` : ""} ${classes}"><code>${text}</code></pre>`;
+    return element`<pre class="codeblock ${language ? `language-${language}` : ""} ${classes}"><code>${escapeHtml(text)}</code></pre>`;
 }

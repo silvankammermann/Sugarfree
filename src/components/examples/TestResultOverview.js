@@ -9,7 +9,7 @@ import Codeblock from "./Codeblock.js";
  */
 export default function TestResultOverview(result) {
     element`<div class="test-result">
-        ${result.passed 
+        ${result.passed
         ? element`<div><span class="text-success">✓</span> ${result.description}</div>`
         : element`<div>
             <span class="text-error">✕</span> ${result.description}
@@ -25,6 +25,7 @@ export default function TestResultOverview(result) {
         element`<div class="m-1">
             ${!result.passed ? element`<p class="text-error">${result.error}</p>` : ""} 
             ${Codeblock(result.fn.toString(), "javascript")}
-        </div>`
+        </div>`,
+        {classes: "m-1"}
     )
 }

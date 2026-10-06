@@ -97,6 +97,10 @@
     font-weight: 700;
 }
 
+.header .home-link:hover {
+    background: none;
+}
+
 .navigation {
     display: flex;
     gap: 1rem;

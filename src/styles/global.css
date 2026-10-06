@@ -23,18 +23,25 @@ a {
     color: var(--accent);
 }
 
+a:hover {
+    background: var(--accent);
+    color: var(--background);
+}
+
 code {
     display: inline-block;
     background: #434343;
     padding: 0 .2rem;
+    border-radius: .2em;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
     display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 * {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }

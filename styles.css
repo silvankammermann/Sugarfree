@@ -1,12 +1,11 @@
 @import "/src/styles/components.css";
-@import "/src/styles/fonts.css";
 @import "/src/styles/global.css";
 @import "/src/styles/helpers.css";
 @import "/src/styles/pages.css";
 @import "/src/styles/container.css";
 
 :root {
-    --accent: #7b3c94;
+    --accent: #d69a5f;
     --text: #242424;
     --background: #ffffff;
 

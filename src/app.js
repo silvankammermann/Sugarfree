@@ -1,12 +1,14 @@
 import Index from "./pages/Index.js"
 import NotFound from "./pages/NotFound.js";
-import { get } from "./lib/router.js";
+import {get} from "./lib/router.js";
 import PageContainer from "./pages/container/PageContainer.js";
 import Tests from "./pages/Tests.js";
+import Element from "./pages/Element.js";
 import Router from "./pages/Router.js";
 
 const [elementCallback, routerContext] = get(window.location.href, {
     "/": PageContainer(Index),
+    "/element": PageContainer(Element),
     "/router": PageContainer(Router),
     "/tests": PageContainer(Tests)
 }, NotFound);
@@ -22,6 +24,6 @@ console.log(routerContext)
 /**
  * @type {SiteContext}
  */
-const siteContext = { ...routerContext }
+const siteContext = {...routerContext}
 
 document.body.appendChild(elementCallback(siteContext))

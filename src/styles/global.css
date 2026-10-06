@@ -23,6 +23,12 @@ a {
     color: var(--accent);
 }
 
+code {
+    display: inline-block;
+    background: #434343;
+    padding: 0 .2rem;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
     display: none;

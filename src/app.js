@@ -3,9 +3,11 @@ import NotFound from "./pages/NotFound.js";
 import { get } from "./lib/router.js";
 import PageContainer from "./pages/container/PageContainer.js";
 import Tests from "./pages/Tests.js";
+import Router from "./pages/Router.js";
 
 const [elementCallback, routerContext] = get(window.location.href, {
     "/": PageContainer(Index),
+    "/router": PageContainer(Router),
     "/tests": PageContainer(Tests)
 }, NotFound);
 
@@ -14,6 +16,8 @@ const [elementCallback, routerContext] = get(window.location.href, {
  * @typedef {Object} SiteContext
  * @extends RouterContext
  */
+
+console.log(routerContext)
 
 /**
  * @type {SiteContext}

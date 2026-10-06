@@ -26,10 +26,10 @@ Add simple, reusable classes to this file.
     border: none;
 }
 
-.padding {
+.p-1 {
     padding: 1em;
 }
 
-.margin {
+.m-1 {
     margin: 1em;
 }

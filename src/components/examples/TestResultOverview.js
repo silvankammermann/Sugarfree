@@ -22,7 +22,7 @@ export default function TestResultOverview(result) {
                 ${result.passed ? "✓" : "✕"}
             </span>
             ${result.description}`,
-        element`<div class="margin">
+        element`<div class="m-1">
             ${!result.passed ? element`<p class="text-error">${result.error}</p>` : ""} 
             ${Codeblock(result.fn.toString(), "javascript")}
         </div>`

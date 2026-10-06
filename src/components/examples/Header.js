@@ -10,6 +10,7 @@ export default function Header() {
         </a>
         <nav class="navigation">
             <a href="/tests">Tests</a>
+            <a href="/router">Router</a>
         </nav>
     </header>`
 }

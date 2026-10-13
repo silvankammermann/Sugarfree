@@ -15,6 +15,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden scroll;
+    padding: 1rem 1.2rem;
 }
 
 #page-container .page-content > :first-child {

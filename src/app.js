@@ -11,7 +11,7 @@ const [elementCallback, routerContext] = get(window.location.href, {
     "/element": PageContainer(Element),
     "/router": PageContainer(Router),
     "/tests": PageContainer(Tests)
-}, NotFound);
+}, PageContainer(NotFound));
 
 /**
  * Extend the router context with e.g. user information or a JWT
